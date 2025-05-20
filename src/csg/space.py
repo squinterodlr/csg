@@ -9,7 +9,7 @@ class Box:
         self.lower_bounds = lower_bounds
         self.upper_bounds = upper_bounds
 
-    def sample(self, num_samples=1, rng: np.random.Generator = None):
+    def sample(self, num_samples=1, rng: np.random.Generator | None = None):
 
         if rng is None:
             return np.random.uniform(
